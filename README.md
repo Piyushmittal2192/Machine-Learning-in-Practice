@@ -41,6 +41,18 @@ Machine Learning techniques expects data in a format respective to their algorit
 1. Prepare the features of the input data for machine learning algorithm.
 2. By providing correct format of feature, we may get better results from the machine learning algorithm.
 
+
+##### Imputation 
+
+```markdown
+threshold = 0.7
+#Dropping columns with missing value rate higher than threshold
+data = data[data.columns[data.isnull().mean() < threshold]]
+
+#Dropping rows with missing value rate higher than threshold
+data = data.loc[data.isnull().mean(axis=1) < threshold]
+
+```
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
