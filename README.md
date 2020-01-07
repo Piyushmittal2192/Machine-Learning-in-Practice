@@ -32,6 +32,12 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 [Link](url) and ![Image](src)
 ```
 
+### Feature Engineering 
+Machine Learning techniques expects data in a format respective to their algorithm. So we manipulate (engineer) the features, so that we can feed the input to the model and get output. So we are doing two things by performing feature engineering :
+
+1. Prepare the features of the input data for machine learning algorithm.
+2. By providing correct format of feature, we may get better results from the machine learning algorithm.
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
