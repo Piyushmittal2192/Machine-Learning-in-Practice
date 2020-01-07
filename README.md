@@ -1,6 +1,8 @@
 ## Machine Learning Topics
 ### Supervised, Unsupervised & Reinforced Learning
 
+-----------------------------------------------------------------------
+
 You can use the [editor on GitHub](https://github.com/Piyushmittal2192/Machine-Learning-in-Practice/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -31,6 +33,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 [Link](url) and ![Image](src)
 ```
+-------------------------------------------------------
 
 ### Feature Engineering 
 Machine Learning techniques expects data in a format respective to their algorithm. So we manipulate (engineer) the features, so that we can feed the input to the model and get output. So we are doing two things by performing feature engineering :
@@ -38,6 +41,7 @@ Machine Learning techniques expects data in a format respective to their algorit
 1. Prepare the features of the input data for machine learning algorithm.
 2. By providing correct format of feature, we may get better results from the machine learning algorithm.
 
+-----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
