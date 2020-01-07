@@ -42,7 +42,7 @@ Machine Learning techniques expects data in a format respective to their algorit
 2. By providing correct format of feature, we may get better results from the machine learning algorithm.
 
 
-##### Imputation 
+#### Dropping 
 
 ```markdown
 threshold = 0.7
@@ -53,6 +53,8 @@ data = data[data.columns[data.isnull().mean() < threshold]]
 data = data.loc[data.isnull().mean(axis=1) < threshold]
 
 ```
+#### Imputation
+
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
