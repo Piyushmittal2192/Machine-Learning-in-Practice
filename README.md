@@ -36,10 +36,10 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 -------------------------------------------------------
 
 ### Feature Engineering 
-Machine Learning techniques expects data in a format respective to their algorithm. So we manipulate (engineer) the features, so that we can feed the input to the model and get output. So we are doing two things by performing feature engineering :
+Machine Learning techniques expects data in a format respective to their algorithm. Therfore, we manipulate (engineer) the features, so that we can feed the input to the model and get output. Feature Engineering helps us to :
 
 1. Prepare the features of the input data for machine learning algorithm.
-2. By providing correct format of feature, we may get better results from the machine learning algorithm.
+2. Provide correct format of feature to get better results from the machine learning algorithm.
 
 
 #### Dropping 
@@ -54,9 +54,21 @@ data = data.loc[data.isnull().mean(axis=1) < threshold]
 
 ```
 #### Imputation
-If the data does not have considerable amount of missing values for the observartions, then we look for <b> Imputation </b> techniques. Imputation means replacing the missing ones with a suitbale value.   
+If the data does not have considerable amount of missing values for the observartions, then we look for <b> Imputation </b> techniques. Imputation means replacing the missing ones with a suitbale value. 
+- ##### Pros : 
+  - Size of the dataset remain same.
+  - Information is not lost when compared to dropping records  
+- ##### Cons : 
+  - Improper imputation will pass wrong informaiton to model and result in bad predictions. 
 
-1. Numerical Imputation 
+1. <b>Numerical Imputation</b> <br>
+When a numerical attribute has missing values, we impute them with numbers. There are different numerical imputation methods :
+    - Replace with 0 
+    - Replace with mean
+    - Replace with median
+    - Replace with mode
+    - Forecast the missing values using other columns
+
 
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
