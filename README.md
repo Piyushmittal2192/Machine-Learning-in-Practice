@@ -43,17 +43,19 @@ Machine Learning techniques expects data in a format respective to their algorit
 
 
 #### Dropping 
-
+When we are imputing the missing values. First thought that comes to our mind is to drop the rows or the columns having a lot of missing values. Usually, when we are dropping we consider a <b> Threshold </b> value, which sets a criteria i.e. if e.g. 70% of the data is not present then drop the records. Threshold can vary based on the dataset.   
 ```markdown
 threshold = 0.7
 #Dropping columns with missing value rate higher than threshold
-data = data[data.columns[data.isnull().mean() < threshold]]
+data = data[data.columns[data.isnull().mean() < threshold]]  # default axis is set to 0 for .mean()
 
 #Dropping rows with missing value rate higher than threshold
 data = data.loc[data.isnull().mean(axis=1) < threshold]
 
 ```
 #### Imputation
+
+1. Numerical Imputation 
 
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
