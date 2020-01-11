@@ -2,37 +2,17 @@
 ### Supervised, Unsupervised & Reinforced Learning
 
 -----------------------------------------------------------------------
-
-You can use the [editor on GitHub](https://github.com/Piyushmittal2192/Machine-Learning-in-Practice/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### Concepts
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 
 
-# Regression
-## Header 2
+# Regressio
 # Classification
-## Header 2
 # Clustrtering
-### Header 3
-
 # Optimizations
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 -------------------------------------------------------
 
 ### Feature Engineering 
@@ -63,11 +43,12 @@ If the data does not have considerable amount of missing values for the observar
 
 1. <b>Numerical Imputation</b> <br>
 When a numerical attribute has missing values, we impute them with numbers. There are different numerical imputation methods :
-    - Replace with 0 
-    - Replace with mean
-    - Replace with median
-    - Replace with mode
-    - Forecast the missing values using other columns
+    - Replace with 0 : if there is only single value 1 and other is NA, then we can subsitute the NA with 0.
+    - Replace with mean : If outliers are not present
+    - Replace with median : If outliers are present then mean values is affected and shifted towards the outliers. Thus is is better to median. 
+    - Forecast the missing values using other columns : Use regression models to predict the missing values.
+2. <b>Categorical Imputation</b> <br>
+When a categorical attribute has missing values, we impute them with maximum occuring element. But if the values are uniformly distributed then we can subtitute with <b>"Others"</b>
 
 
 -----------------------------------------------------------
