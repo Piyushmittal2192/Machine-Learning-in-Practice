@@ -66,6 +66,39 @@ data['column_name'].fillna(data['column_name'].value_counts().idxmax(), inplace=
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+3. <b>Outliers</b> <br>
+Outliers are points/obervations that are significantly different from other observations in data. Outliers can occur due to 
+error in recording the observation or the occurance of event that lead to deviation in the observation.
+<b> Measures to Identify Outliers </b>
+  - Standard Deviation
+  - Percentiles
+    - <b>Standard Deviation</b> : Any observation that is at a distance greater that x * standard deviation, where x is generally 3 or 4, is an outlier.
+    ```markdown
+    #Dropping the outlier rows with standard deviation
+    factor = 3
+    upper_lim = data['column'].mean () + data['column'].std () * factor
+    lower_lim = data['column'].mean () - data['column'].std () * factor
+
+    data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)]
+    ```
+    - <b>Percentiles</b> : 
+    ```markdown
+    #Dropping the outlier rows with Percentiles
+    upper_lim = data['column'].quantile(.95)
+    lower_lim = data['column'].quantile(.05)
+
+    data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)]
+    ```
+  
+  <b> Capping</b> : Instead of drop we can cap the observations 
+  ```markdown
+    #Capping the outlier rows with Percentiles
+    upper_lim = data['column'].quantile(.95)
+    lower_lim = data['column'].quantile(.05)
+    data.loc[(df[column] > upper_lim),column] = upper_lim
+    data.loc[(df[column] < lower_lim),column] = lower_lim
+    
+    
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Piyushmittal2192/Machine-Learning-in-Practice/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
