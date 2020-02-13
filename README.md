@@ -8,7 +8,7 @@
 ```markdown
 
 
-# Regressio
+# Regression
 # Classification
 # Clustrtering
 # Optimizations
@@ -48,9 +48,22 @@ When a numerical attribute has missing values, we impute them with numbers. Ther
     - Replace with median : If outliers are present then mean values is affected and shifted towards the outliers. Thus is is better to median. 
     - Forecast the missing values using other columns : Use regression models to predict the missing values.
 2. <b>Categorical Imputation</b> <br>
-When a categorical attribute has missing values, we impute them with maximum occuring element. But if the values are uniformly distributed then we can subtitute with <b>"Others"</b>
+When a categorical attribute has missing values, we impute them with maximum occuring element. But if the values are uniformly distributed i.e. no dominant category, then we can subtitute with <b>"Others"</b>
 
+```markdown
+#Filling all missing values with 0
+data = data.fillna(0)
+#Filling missing values with medians of the columns
+data = data.fillna(data.median())
+```
 
+3. <b>Categorical Imputation</b> <br>
+When a categorical attribute has missing values, we impute them with maximum occuring element. But if the values are uniformly distributed i.e. no dominant category, then we can subtitute with <b>"Others"</b>
+
+```markdown
+#Max fill function for categorical columns
+data['column_name'].fillna(data['column_name'].value_counts().idxmax(), inplace=True)
+```
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
