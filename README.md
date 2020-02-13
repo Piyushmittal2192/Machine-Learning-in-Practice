@@ -7,7 +7,8 @@
 
 ```markdown
 
-
+# Feature Engineering
+# Feature Extraction
 # Regression
 # Classification
 # Clustrtering
@@ -66,7 +67,7 @@ data['column_name'].fillna(data['column_name'].value_counts().idxmax(), inplace=
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-3. <b>Outliers</b> <br>
+3. <b>Outlier Removal</b> <br>
 Outliers are points/obervations that are significantly different from other observations in data. Outliers can occur due to 
 error in recording the observation or the occurance of event that lead to deviation in the observation.
 <b> Measures to Identify Outliers </b>
@@ -90,11 +91,16 @@ error in recording the observation or the occurance of event that lead to deviat
     data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)]
     ```
   
-  <b> Capping</b> : Instead of drop we can cap the observations 
-  ```markdown
-    #Capping the outlier rows with Percentiles
-    upper_lim = data['column'].quantile(.95)
-    lower_lim = data['column'].quantile(.05)
-    data.loc[(df[column] > upper_lim),column] = upper_lim
-    data.loc[(df[column] < lower_lim),column] = lower_lim
+  - <b> Capping</b> : Instead of drop we can cap the observations 
+    ```markdown
+      #Capping the outlier rows with Percentiles
+      upper_lim = data['column'].quantile(.95)
+      lower_lim = data['column'].quantile(.05)
+      data.loc[(df[column] > upper_lim),column] = upper_lim
+      data.loc[(df[column] < lower_lim),column] = lower_lim
     ```
+4. <b>Binning</b> <br>
+Data binning is a data pre-processing technique used to reduce the effects of minor observation errors. The original data values which fall into a given small interval, a bin, are replaced by a value representative of that interval, often the central value. It is a form
+of quantization
+
+
