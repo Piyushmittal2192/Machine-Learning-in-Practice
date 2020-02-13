@@ -97,7 +97,7 @@ error in recording the observation or the occurance of event that lead to deviat
     lower_lim = data['column'].quantile(.05)
     data.loc[(df[column] > upper_lim),column] = upper_lim
     data.loc[(df[column] < lower_lim),column] = lower_lim
-    
+    ```
     
 ### Jekyll Themes
 
