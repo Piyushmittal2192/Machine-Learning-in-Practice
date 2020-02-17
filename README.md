@@ -99,21 +99,43 @@ error in recording the observation or the occurance of event that lead to deviat
     ```
 4. <b>Binning</b> <br>
 Data binning is a data pre-processing technique used to reduce the effects of minor observation errors. The original data values which fall into a given small interval, a bin, are replaced by a value representative of that interval, often the central value. It is a form
-of quantization. The intent of binning is to make the model more robust and prevent overfitting. The con of binning is that, it leads to loss of information  
+of quantization. The intent of binning is to make the model more robust and prevent overfitting. The con of binning is that, it leads to loss of information. Binning labels to <b>"others"</b> makes sense when there are 100,000 observations and among them there are labels that have count less than 100. 
 
 ```markdown
 #Numerical Binning Example
-Value      Bin       
-0-30   ->  Low       
-31-70  ->  Mid       
-71-100 ->  High
+data['bin'] = pd.cut(data['value'], bins=[0,30,70,100], labels=["Low", "Mid", "High"])
+   value   bin
+0      2   Low
+1     45   Mid
+2      7   Low
+3     85  High
+4     28   Low
 #Categorical Binning Example
-Value      Bin       
-Spain  ->  Europe      
-Italy  ->  Europe       
-Chile  ->  South America
-Brazil ->  South America
+     Country
+0      Spain
+1      Chile
+2  Australia
+3      Italy
+4     Brazil
+conditions = [
+    data['Country'].str.contains('Spain'),
+    data['Country'].str.contains('Italy'),
+    data['Country'].str.contains('Chile'),
+    data['Country'].str.contains('Brazil')]
+
+choices = ['Europe', 'Europe', 'South America', 'South America']
+
+data['Continent'] = np.select(conditions, choices, default='Other')
+     Country      Continent
+0      Spain         Europe
+1      Chile  South America
+2  Australia          Other
+3      Italy         Europe
+4     Brazil  South America
 ```
+
+
+
 
 
 
