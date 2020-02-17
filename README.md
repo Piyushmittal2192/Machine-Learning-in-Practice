@@ -2,15 +2,15 @@
 ### Supervised, Unsupervised & Reinforced Learning
 
 -----------------------------------------------------------------------
-### Concepts
+## Concepts
 
 
-# Feature Engineering
-# Feature Extraction
-# Regression
-# Classification
-# Clustrtering
-# Optimizations
+### Feature Engineering
+### Feature Extraction
+### Regression
+### Classification
+### Clustrtering
+### Optimizations
 
 -------------------------------------------------------
 
