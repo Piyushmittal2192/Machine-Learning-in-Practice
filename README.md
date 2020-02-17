@@ -5,8 +5,6 @@
 ### Concepts
 
 
-```markdown
-
 # Feature Engineering
 # Feature Extraction
 # Regression
@@ -101,6 +99,22 @@ error in recording the observation or the occurance of event that lead to deviat
     ```
 4. <b>Binning</b> <br>
 Data binning is a data pre-processing technique used to reduce the effects of minor observation errors. The original data values which fall into a given small interval, a bin, are replaced by a value representative of that interval, often the central value. It is a form
-of quantization
+of quantization. The intent of binning is to make the model more robust and prevent overfitting. The con of binning is that, it leads to loss of information  
+
+```markdown
+#Numerical Binning Example
+Value      Bin       
+0-30   ->  Low       
+31-70  ->  Mid       
+71-100 ->  High
+#Categorical Binning Example
+Value      Bin       
+Spain  ->  Europe      
+Italy  ->  Europe       
+Chile  ->  South America
+Brazil ->  South America
+```
+
+
 
 
