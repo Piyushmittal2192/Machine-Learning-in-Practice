@@ -9,7 +9,7 @@
 ### Feature Extraction
 ### Regression
 ### Classification
-### Clustrtering
+### Clustering
 ### Optimizations
 
 -------------------------------------------------------
