@@ -3,7 +3,7 @@
 
 -----------------------------------------------------------------------
 ## Concepts
-
+### Data & Its Type
 
 ### Feature Engineering
 ### Feature Extraction
@@ -146,7 +146,7 @@ data['log+1'] = (data['value']+1).transform(np.log)
 data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
 ```
 6. <b>One Hot Encoding</b><br>
-Machine learning models need 
+Depending on the Machine Learning model, we need to feed the data in a specific format. Some alogorithms need the data to be in numerical formal, so if we have categotical observations, then we need to convert them in numerical format. there are certain ways, one of them is One Hot Encoding. We use this when there is no order among the labels of the feature. e.g. if color feature having labels Red, gree, blue.
 
 
 
