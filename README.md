@@ -145,7 +145,8 @@ data['log+1'] = (data['value']+1).transform(np.log)
 #Note that the values are different
 data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
 ```
-
+6. <b>One Hot Encoding</b><br>
+Machine learning models need 
 
 
 
