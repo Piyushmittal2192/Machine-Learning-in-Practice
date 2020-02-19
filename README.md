@@ -134,7 +134,17 @@ data['Continent'] = np.select(conditions, choices, default='Other')
 4     Brazil  South America
 ```
 
+5. <b>Log Transformation</b><br> 
+Manipulates the given observation using log function. Log transformation scales down the magnitude of the values. e.g. if we want our model to learn that the experience gain from age 15 to 20 is more when compared to age 75 to 80, then simply providing age as it is to model might not be a good idea. As difference between 20-15 and 65-70 is 5. whereas we know that the expereince gain is more from age 15 to 20 than 65 to 70. So, if we perform log over values then we can see that log 20-log15 = 0.124 and log70 - log 65 = 0.03  
 
+```markdown
+#Log Transform Example
+data = pd.DataFrame({'value':[2,45, -23, 85, 28, 2, 35, -12]})
+data['log+1'] = (data['value']+1).transform(np.log)
+#Negative Values Handling
+#Note that the values are different
+data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
+```
 
 
 
