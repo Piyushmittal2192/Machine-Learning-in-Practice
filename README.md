@@ -146,8 +146,7 @@ data['log+1'] = (data['value']+1).transform(np.log)
 data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
 ```
 6. <b>One Hot Encoding</b><br>
-Depending on the Machine Learning model, we need to feed the data in a specific format. Some alogorithms need the data to be in numerical formal, so if we have categotical observations, then we need to convert them in numerical format. there are certain ways, one of them is One Hot Encoding. We use this when there is no order among the labels of the feature. e.g. if color feature having labels Red, gree, blue.
-
+Depending on the Machine Learning model, we need to feed the data in a specific format. Some alogorithms need the data to be in numerical formal, so if we have categotical observations, then we need to convert them in numerical format. there are certain ways, one of them is One Hot Encoding. We use this when there is no order among the labels of the feature. e.g. if we have a color feature having  Red, gree, blue labels. Then we can't assign numerical values as 0,1,2 respecitvely to the colors, cuz by doing so we are saying Blue is 2 units more than Red and Green is 1 unit more than blue, which is not true. So one hot encode the feature such that we create 3 columns w.r.t Red, Green, Blue color. 
 
 
 
