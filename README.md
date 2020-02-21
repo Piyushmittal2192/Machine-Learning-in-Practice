@@ -169,6 +169,10 @@ df
 5	6	0	1	0
 ```
 
+#### Grouping
+Tidy datasets -> every instance is represented by row in training data and each column represents the feature of the instance.
+Transactional Datasets -> an instance has multiple rows in dataset. We need to group by instances and each instance will be represented by a row.
+
 
 
 
