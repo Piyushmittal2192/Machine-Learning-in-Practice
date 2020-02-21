@@ -65,7 +65,7 @@ data['column_name'].fillna(data['column_name'].value_counts().idxmax(), inplace=
 -----------------------------------------------------------
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-3. <b>Outlier Removal</b> <br>
+#### Outlier Removal
 Outliers are points/obervations that are significantly different from other observations in data. Outliers can occur due to 
 error in recording the observation or the occurance of event that lead to deviation in the observation.
 <b> Measures to Identify Outliers </b>
@@ -97,7 +97,7 @@ error in recording the observation or the occurance of event that lead to deviat
       data.loc[(df[column] > upper_lim),column] = upper_lim
       data.loc[(df[column] < lower_lim),column] = lower_lim
     ```
-4. <b>Binning</b> <br>
+#### Binning
 Data binning is a data pre-processing technique used to reduce the effects of minor observation errors. The original data values which fall into a given small interval, a bin, are replaced by a value representative of that interval, often the central value. It is a form
 of quantization. The intent of binning is to make the model more robust and prevent overfitting. The con of binning is that, it leads to loss of information. Binning labels to <b>"others"</b> makes sense when there are 100,000 observations and among them there are labels that have count less than 100. 
 
@@ -134,7 +134,7 @@ data['Continent'] = np.select(conditions, choices, default='Other')
 4     Brazil  South America
 ```
 
-5. <b>Log Transformation</b><br> 
+#### Log Transformation 
 Manipulates the given observation using log function. Log transformation scales down the magnitude of the values. e.g. if we want our model to learn that the experience gain from age 15 to 20 is more when compared to age 75 to 80, then simply providing age as it is to model might not be a good idea. As difference between 20-15 and 65-70 is 5. whereas we know that the expereince gain is more from age 15 to 20 than 65 to 70. So, if we perform log over values then we can see that log 20-log15 = 0.124 and log70 - log 65 = 0.03  
 
 ```markdown
@@ -145,7 +145,7 @@ data['log+1'] = (data['value']+1).transform(np.log)
 #Note that the values are different
 data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
 ```
-6. <b>One Hot Encoding</b><br>
+#### One Hot Encoding
 Depending on the Machine Learning model, we need to feed the data in a specific format. Some alogorithms need the data to be in numerical formal, so if we have categotical observations, then we need to convert them in numerical format. there are certain ways, one of them is One Hot Encoding. We use this when there is no order among the labels of the feature. e.g. if we have a color feature having  Red, gree, blue labels. Then we can't assign numerical values as 0,1,2 respecitvely to the colors, cuz by doing so we are saying Blue is 2 units more than Red and Green is 1 unit more than blue, which is not true. So one hot encode the feature such that we create 3 columns w.r.t Red, Green, Blue color. 
 ```markdown
 df = pd.DataFrame({'color':['r','b','g','r','r','g'], 'count':[1, 2, 3, 4, 5, 6]})
@@ -168,5 +168,7 @@ df
 4	5	0	0	1
 5	6	0	1	0
 ```
+
+
 
 
