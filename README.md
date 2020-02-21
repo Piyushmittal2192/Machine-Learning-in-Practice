@@ -147,6 +147,26 @@ data['log'] = (data['value']-data['value'].min()+1) .transform(np.log)
 ```
 6. <b>One Hot Encoding</b><br>
 Depending on the Machine Learning model, we need to feed the data in a specific format. Some alogorithms need the data to be in numerical formal, so if we have categotical observations, then we need to convert them in numerical format. there are certain ways, one of them is One Hot Encoding. We use this when there is no order among the labels of the feature. e.g. if we have a color feature having  Red, gree, blue labels. Then we can't assign numerical values as 0,1,2 respecitvely to the colors, cuz by doing so we are saying Blue is 2 units more than Red and Green is 1 unit more than blue, which is not true. So one hot encode the feature such that we create 3 columns w.r.t Red, Green, Blue color. 
-
+```markdown
+df = pd.DataFrame({'color':['r','b','g','r','r','g'], 'count':[1, 2, 3, 4, 5, 6]})
+df
+    color	count
+0	r	1
+1	b	2
+2	g	3
+3	r	4
+4	r	5
+5	g	6
+encoded_col = pd.get_dummies(df['color'])
+df = df.join(encoded_col).drop('color', axis = 1)
+df
+    count	b	g	r
+0	1	0	0	1
+1	2	1	0	0
+2	3	0	1	0
+3	4	0	0	1
+4	5	0	0	1
+5	6	0	1	0
+```
 
 
