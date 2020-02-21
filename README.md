@@ -165,14 +165,26 @@ df
 1	2	1	0	0
 2	3	0	1	0
 3	4	0	0	1
-4	5	0	0	1
+4	5	0	0	1 
 5	6	0	1	0
 ```
 
 #### Grouping
 Tidy datasets -> every instance is represented by row in training data and each column represents the feature of the instance.
 Transactional Datasets -> an instance has multiple rows in dataset. We need to group by instances and each instance will be represented by a row.
-
-
+  - <b> Categorical Column Grouping </b> <br> :
+      - Highest Frequency: Select the label with highest frequency.
+            ```markdown
+                data.groupby('id').agg(lambda x: x.value_counts().index[0])
+            ```
+      - Pivot Table : 
+            ```markdown
+                #Pivot table Pandas Example
+                 data.pivot_table(index='column_to_group', columns='column_to_encode', values='aggregation_column', aggfunc=np.sum, fill_value = 0)
+             ```
+      - Group By one-hot-encoding : Apply group by function after one-hot encoding. Usig this we can preserve all the data lost via first option
+          
+       -  
+        
 
 
