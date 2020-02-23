@@ -79,6 +79,7 @@ error in recording the observation or the occurance of event that lead to deviat
     lower_lim = data['column'].mean () - data['column'].std () * factor
 
     data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)]
+1
     ```
     - <b>Percentiles</b> : 
     ```markdown
