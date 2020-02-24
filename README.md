@@ -202,7 +202,8 @@ data.title.str.split("(", n=1, expand=True)[1].str.split(")", n=1, expand=True)[
 3    1995
 4    1995
 ```
-
+#### Scaling
+Distance based algorithms calculates Eucladian distance between feature vectors to find similarity. Feature vectors need to be scaled. Unscaled features can provide misinformative comparison.
         
 
 
