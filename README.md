@@ -185,7 +185,24 @@ Transactional Datasets -> an instance has multiple rows in dataset. We need to g
              ```
       - Group By one-hot-encoding : Apply group by function after one-hot encoding. Usig this we can preserve all the data lost via first option.
           
-       -  
+#### Feature Split
+Split the column data to usefull information
+```markdown
+#String extraction example
+data.title.head()
+0                      Toy Story (1995)
+1                        Jumanji (1995)
+2               Grumpier Old Men (1995)
+3              Waiting to Exhale (1995)
+4    Father of the Bride Part II (1995)
+data.title.str.split("(", n=1, expand=True)[1].str.split(")", n=1, expand=True)[0]
+0    1995
+1    1995
+2    1995
+3    1995
+4    1995
+```
+
         
 
 
