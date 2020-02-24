@@ -244,7 +244,11 @@ data['day_name'] = data['date'].dt.day_name()
 3 1999-08-25  1999      8            20            235  Wednesday
 4 1993-02-20  1993      2            26            313   Saturday
 ```
-   
+
+### Reference
+https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114   
+https://towardsdatascience.com/understanding-feature-engineering-part-1-continuous-numeric-data-da4e47099a7b
+https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63
         
 
 
