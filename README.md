@@ -183,7 +183,7 @@ Transactional Datasets -> an instance has multiple rows in dataset. We need to g
                 #Pivot table Pandas Example
                  data.pivot_table(index='column_to_group', columns='column_to_encode', values='aggregation_column', aggfunc=np.sum, fill_value = 0)
              ```
-      - Group By one-hot-encoding : Apply group by function after one-hot encoding. Usig this we can preserve all the data lost via first option
+      - Group By one-hot-encoding : Apply group by function after one-hot encoding. Usig this we can preserve all the data lost via first option.
           
        -  
         
