@@ -204,6 +204,9 @@ data.title.str.split("(", n=1, expand=True)[1].str.split(")", n=1, expand=True)[
 ```
 #### Scaling
 Distance based algorithms calculates Eucladian distance between feature vectors to find similarity. Feature vectors need to be scaled. Unscaled features can provide misinformative comparison.
+  - Min-Max Normalization
+  - z-score Normalization(Standardization)
+   
         
 
 
