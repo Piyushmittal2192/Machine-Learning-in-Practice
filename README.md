@@ -3,6 +3,7 @@
 
 -----------------------------------------------------------------------
 ## Concepts
+### Convergence
 ### Data & Its Type
 
 ### Feature Engineering
@@ -13,6 +14,13 @@
 ### Optimizations
 
 -------------------------------------------------------
+
+### Convergence
+
+To “converge” in machine learning is to have an error so close to local/global minimum, or you can see it aa having a performance so close to local/global minimum. When the model “converges” there is usually no significant error decrease/performance increase anymore. <br>
+Poor convergence means the machine learning algorithm takes a long time to train, and needs more data to do it.
+
+----------
 
 ### Feature Engineering 
 Machine Learning techniques expects data in a format respective to their algorithm. Therfore, we manipulate (engineer) the features, so that we can feed the input to the model and get output. Feature Engineering helps us to :
