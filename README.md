@@ -14,7 +14,9 @@
 ### Optimizations
 
 -------------------------------------------------------
-
+#### Online vs Batch learning
+#### Instance vs model based learning
+-------
 ### Convergence
 
 To “converge” in machine learning is to have an error so close to local/global minimum, or you can see it aa having a performance so close to local/global minimum. When the model “converges” there is usually no significant error decrease/performance increase anymore. <br>
