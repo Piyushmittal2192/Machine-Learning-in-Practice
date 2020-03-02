@@ -23,6 +23,12 @@ To “converge” in machine learning is to have an error so close to local/glob
 Poor convergence means the machine learning algorithm takes a long time to train, and needs more data to do it.
 
 ----------
+Machine leanrning is good because :
+1. No manual coding of complex rules. small code, better performance.
+2. solutions which are non-trivial with complex rules are easy to obtain with ML.
+3. ML algo can adapt to new data.
+4. can get insights about complex problems and large data. 
+-------
 
 ### Feature Engineering 
 Machine Learning techniques expects data in a format respective to their algorithm. Therfore, we manipulate (engineer) the features, so that we can feed the input to the model and get output. Feature Engineering helps us to :
