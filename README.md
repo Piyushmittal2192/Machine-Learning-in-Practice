@@ -17,6 +17,16 @@
 #### Online vs Batch learning
 #### Instance vs model based learning
 -------
+### ML challenges
+
+1. Insufficient Training Data
+2. Non representative data
+3. Poor quality data
+4. Irrelevant Features
+5. Overfitting the Training Data
+6. 
+
+--------
 ### Convergence
 
 To “converge” in machine learning is to have an error so close to local/global minimum, or you can see it aa having a performance so close to local/global minimum. When the model “converges” there is usually no significant error decrease/performance increase anymore. <br>
