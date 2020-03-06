@@ -4,7 +4,7 @@
 -----------------------------------------------------------------------
 ## Concepts
 ### Convergence
-### Data & Its Type
+### Data & It's Type
 
 ### Feature Engineering
 ### Feature Extraction
