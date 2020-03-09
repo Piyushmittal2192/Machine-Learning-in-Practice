@@ -39,7 +39,22 @@ Machine leanrning is good because :
 3. ML algo can adapt to new data.
 4. can get insights about complex problems and large data. 
 -------
-
+#### ML Summary 
+Machine Learning is about making machines get better at some task by learning
+from data, instead of having to explicitly code rules.
+• There are many different types of ML systems: supervised or not, batch or online,
+instance-based or model-based, and so on.
+• In a ML project you gather data in a training set, and you feed the training set to
+a learning algorithm. If the algorithm is model-based it tunes some parameters to
+fit the model to the training set (i.e., to make good predictions on the training set
+itself), and then hopefully it will be able to make good predictions on new cases
+as well. If the algorithm is instance-based, it just learns the examples by heart and
+uses a similarity measure to generalize to new instances.
+• The system will not perform well if your training set is too small, or if the data is
+not representative, noisy, or polluted with irrelevant features (garbage in, garbage
+out). Lastly, your model needs to be neither too simple (in which case it will
+underfit) nor too complex (in which case it will overfit).
+-----
 ### Feature Engineering 
 Machine Learning techniques expects data in a format respective to their algorithm. Therfore, we manipulate (engineer) the features, so that we can feed the input to the model and get output. Feature Engineering helps us to :
 
