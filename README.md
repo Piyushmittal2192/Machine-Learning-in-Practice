@@ -1,4 +1,10 @@
 ## Machine Learning Topics
+
+### Linear Algebra
+
+Vector : Each element of vector must be of same type.
+(0,1,1.5,2) this is not a vector
+
 ### Supervised, Unsupervised & Reinforced Learning
 
 -----------------------------------------------------------------------
