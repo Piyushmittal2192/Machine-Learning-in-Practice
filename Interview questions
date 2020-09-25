@@ -1,0 +1,23 @@
+1. What is cross-validation? How to do it right?
+- Model Validation technique used to test model performance on the indepdent test data. The technique defines a validation data set which test model performance during the training phase itself.
+- in order to do it in a right manner we have to take the training and validation data from the same data set
+cross validation can be done in various ways like
+  - k fold validation : in this we divide the data into k groups, where k-1 groups are used for training and last group is used for validation. 
+  - startified : in this we the data accross the folds is balanced i.e. each group will have equal number of target classes in case of classification task
+  - repeated
+  - leave one out CV: we create number of folds as the number of observations. Here each data point gets the chance to validate the model. LOOCV is not suitable for large datasets.
+  Benifit of CV is that it helps in limiting the overfitting.
+  Usually in case of k fold calidation we take k = 5 or k = 10, as this number gives us the best results. because if we increase the valus of K although bias would decrease the variance would be higher. So it is essential for us to decide which number is best for bias variance tradeoff
+  link for bias variance trade off : https://www.kdnuggets.com/2016/08/bias-variance-tradeoff-overview.html
+  
+  To use the more formal terms for bias and variance, assume we have a point estimator θ^ of some parameter or function θ. Then, the bias is commonly defined as the difference between the expected value of the estimator and the parameter that we want to estimate:
+
+Bias=E[θ^]−θ.
+If the bias is larger than zero, we also say that the estimator is positively biased, if the bias is smaller than zero, the estimator is negatively biased, and if the bias is exactly zero, the estimator is unbiased. Similarly, we define the variance as the difference between the expected value of the squared estimator minus the squared expectation of the estimator:
+
+Var(θ^)=E[θ^2]−(E[θ^])2.
+Note that in the context of this lecture, it will be more convenient to write the variance in its alternative form:
+
+Var(θ^)=E[(E[θ^]−θ^)2].
+  
+2. 
