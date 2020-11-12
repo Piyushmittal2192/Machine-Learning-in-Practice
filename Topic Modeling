@@ -1,2 +1,3 @@
 Topic Modeling : Clustering Technique. Unsupervised learning mechanism. Cluster documents and identify topics under which documents can be categorised into.
-  - Each word in a Documnet is analysed. Documents having similar words are grouped together.  
+  - Each word in a Documnet is analysed. Documents having similar words are grouped together. 
+  - i.e. find word frequency, group similar patterns/expressions/words occuring together, distance between words and cluster documents on these parameters.  
