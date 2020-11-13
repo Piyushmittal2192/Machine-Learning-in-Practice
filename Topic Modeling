@@ -1,3 +1,15 @@
 Topic Modeling : Clustering Technique. Unsupervised learning mechanism. Cluster documents and identify topics under which documents can be categorised into.
+
+Latent means unobserved
+Latent Variables means : unobserved variables in the feature space that can be seen via observed variables. 
+
+LSA - Latent Semantic Analysis
+it is based on Distributional hypothesis: linguistic items with similar distributions have similar meanings. 
+  i.e. words that are used and occur in the same contexts tend to purport similar meanings.
+
+Math - compute the word frequencies across all documents and assume that the similar documents will have similar word frequency distribution
+
+
+LDA - Latent Dirchelet Analysis 
   - Each word in a Documnet is analysed. Documents having similar words are grouped together. 
   - i.e. find word frequency, group similar patterns/expressions/words occuring together, distance between words and cluster documents on these parameters.  
