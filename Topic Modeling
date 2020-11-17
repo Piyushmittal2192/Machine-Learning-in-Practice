@@ -1,7 +1,7 @@
 Topic Modeling : Clustering Technique. Unsupervised learning mechanism. Cluster documents and identify topics under which documents can be categorised into.
 
-Latent means unobserved
-Latent Variables means : unobserved variables in the feature space that can be seen via observed variables. 
+Document Generation -> Document is based on topics and contains words w.r.t each topic.  
+
 
 LSA - Latent Semantic Analysis
 it is based on Distributional hypothesis: linguistic items with similar distributions have similar meanings. 
@@ -14,10 +14,14 @@ LDA - Latent Dirchelet Allocation
   - Each word in a Documnet is analysed. Documents having similar words are grouped together. 
   - i.e. find word frequency, group similar patterns/expressions/words occuring together, distance between words and cluster documents on these parameters. 
 
-LDA litteral meaning -> unobserved Dirchelet distribution analysis and allocating 
+LDA litteral meaning -> unobserved/hidden topics, Dirchelet distribution analysis and allocating topics to text
+Latent -> unobserved or hidden information 
+Latent Variables means : unobserved/hidden variables in the feature space that can be seen via analysing observed variables like text. 
+Dirchelet Distribution :  
   
 
 Links :
   1. https://towardsdatascience.com/a-unique-approach-to-short-text-clustering-part-1-algorithmic-theory-4d4fad0882e1
   2. https://medium.com/analytics-vidhya/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045
   3. https://towardsdatascience.com/short-text-topic-modeling-70e50a57c883 
+  4. https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0
