@@ -13,3 +13,7 @@ Math - compute the word frequencies across all documents and assume that the sim
 LDA - Latent Dirchelet Analysis 
   - Each word in a Documnet is analysed. Documents having similar words are grouped together. 
   - i.e. find word frequency, group similar patterns/expressions/words occuring together, distance between words and cluster documents on these parameters.  
+  
+  Links :
+  1. https://towardsdatascience.com/a-unique-approach-to-short-text-clustering-part-1-algorithmic-theory-4d4fad0882e1
+  2. https://medium.com/analytics-vidhya/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045
